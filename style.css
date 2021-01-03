@@ -1,0 +1,42 @@
+nav {
+    background-color: wheat;
+}
+body {
+    background-color: tan;
+}
+nav .INPUT {
+    font-size: large;
+    background-color: gray;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+
+main #Editor {
+    display: inline-block;
+    font-size: large;
+    overflow-x:scroll;
+    height:400px;
+    width:200px;
+    border:solid black 1px;
+    border-style: none;
+}
+main #Output {
+    display: inline-block;
+    font-size: large;
+    overflow-x:scroll;
+    height:400px;
+    width:400px;
+    border:solid black 1px;
+    border-style: none;
+}
+
+#chartDiv{
+    background-color: white; 
+    width:615px;
+    height:615px;
+    border-style: none;
+}

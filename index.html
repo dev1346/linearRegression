@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Regression</title>
+</head>
+
+<body onload="init()">
+    <nav>
+        <label id="loadFileLabel" class="INPUT" for="loadFile">Load CSV
+            <input type="file" id="loadFile" hidden onchange="loadFile()">
+        </label>
+        <label class="INPUT" for="analyse">Analyse
+            <input type="button" id="analyse" hidden onclick="linearRegression()">
+        </label>
+        <label class="INPUT" for="estimate">Estimate
+            <input type="button" id="estimate" hidden onclick="linearEstimation()">
+        </label>
+    </nav>
+    <br>
+    <main>
+        <textarea id="Editor" cols="30" rows="30" ondrop=drop(event) placeholder="use Load CSV or drag &drop a csv-file
+            here!"></textarea>
+        <textarea id="Output" cols="60" rows="30" readonly></textarea>
+        <br>
+        <div id="chartDiv">
+            <canvas id="Chart" height="100%" width="100%"></canvas>
+        </div>
+    </main>
+</body>
+
+</html>
